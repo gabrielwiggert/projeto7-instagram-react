@@ -1,7 +1,7 @@
-export default function TopoPost() {
+export default function TopoPost(props) {
   return (
     <div class="topo">
-      <UsuarioPost imagem="/img/barked.svg" user="barked"/>
+      <UsuarioPost imagem={props.imageUsuario} user={props.nomeUsuario}/>
       <div class="acoes">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>

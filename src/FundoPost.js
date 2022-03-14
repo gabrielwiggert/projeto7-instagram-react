@@ -1,7 +1,7 @@
 import ListaIonIconsPost from "./ListaIonIconsPost";
 import IonIcon from "./IonIcon";
 
-export default function FundoPost() {
+export default function FundoPost(props) {
     return (
         <div class="fundo">
             <div class="acoes">
@@ -13,7 +13,7 @@ export default function FundoPost() {
                 </div>
             </div>
 
-            <Curtidas imagem="/img/adorable_animals.svg" curtidoPor="adorable_animals" numPessoas="99.159"/>
+            <Curtidas imagem={props.imagem} curtidoPor={props.curtidoPor} numPessoas={props.numPessoas}/>
 
         </div>
     );

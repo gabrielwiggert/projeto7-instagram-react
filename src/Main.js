@@ -1,5 +1,6 @@
 import Posts from './Posts';
 import Stories from './Stories'
+import Sugestao from './Sugestao'
 
 export default function Main() {
     return (
@@ -7,42 +8,6 @@ export default function Main() {
         <div class="esquerda">
             <Stories />
           <div class="posts">
-            <div class="post">
-              <div class="topo">
-                <div class="usuario">
-                  <img src="/img/meowed.svg" />
-                  meowed
-                </div>
-                <div class="acoes">
-                  <ion-icon name="ellipsis-horizontal"></ion-icon>
-                </div>
-              </div>
-
-              <div class="conteudo">
-                <img src="/img/gato-telefone.svg" />
-              </div>
-
-              <div class="fundo">
-                <div class="acoes">
-                  <div>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <ion-icon name="chatbubble-outline"></ion-icon>
-                    <ion-icon name="paper-plane-outline"></ion-icon>
-                  </div>
-                  <div>
-                    <ion-icon name="bookmark-outline"></ion-icon>
-                  </div>
-                </div>
-
-                <div class="curtidas">
-                  <img src="/img/respondeai.svg" />
-                  <div class="texto">
-                    Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <Posts />
           </div>
         </div>
@@ -62,65 +27,11 @@ export default function Main() {
               <div>Ver tudo</div>
             </div>
 
-            <div class="sugestao">
-              <div class="usuario">
-                <img src="/img/bad.vibes.memes.svg" />
-                <div class="texto">
-                  <div class="nome">bad.vibes.memes</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img src="/img/chibirdart.svg" />
-                <div class="texto">
-                  <div class="nome">chibirdart</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img src="/img/razoesparaacreditar.svg" />
-                <div class="texto">
-                  <div class="nome">razoesparaacreditar</div>
-                  <div class="razao">Novo no Instagram</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img src="/img/adorable_animals.svg" />
-                <div class="texto">
-                  <div class="nome">adorable_animals</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
-
-            <div class="sugestao">
-              <div class="usuario">
-                <img src="/img/smallcutecats.svg" />
-                <div class="texto">
-                  <div class="nome">smallcutecats</div>
-                  <div class="razao">Segue você</div>
-                </div>
-              </div>
-
-              <div class="seguir">Seguir</div>
-            </div>
+            <Sugestao image="/img/bad.vibes.memes.svg" name="bad.vibes.memes"/>
+            <Sugestao image="/img/chibirdart.svg" name="chibirdart"/>
+            <Sugestao image="/img/razoesparaacreditar.svg" name="razoesparaacreditar"/>
+            <Sugestao image="/img/adorable_animals.svg" name="adorable_animals"/>
+            <Sugestao image="/img/smallcutecats.svg" name="smallcutecats"/>
           </div>
 
           <div class="links">
