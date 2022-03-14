@@ -1,6 +1,7 @@
 import Posts from './Posts';
 import Stories from './Stories'
 import Sugestao from './Sugestao'
+import User from './User'
 
 export default function Main() {
     const sugestoes = [
@@ -20,13 +21,7 @@ export default function Main() {
         </div>
 
         <div class="sidebar">
-          <div class="usuario">
-            <img src="/img/catanacomics.svg" />
-            <div class="texto">
-              <strong>catanacomics</strong>
-              Catana
-            </div>
-          </div>
+            <User />
 
           <div class="sugestoes">
             <div class="titulo">
