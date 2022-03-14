@@ -1,17 +1,20 @@
 import IonIcon from "./IonIcon";
 
 export default function Stories() {
+    const stories = [
+        { imagem: "/img/9gag.svg", usuario: "9gag" },
+        { imagem: "/img/meowed.svg", usuario: "meowed" },
+        { imagem: "/img/barked.svg", usuario: "barked" },
+        { imagem: "/img/nathanwpylestrangeplanet.svg", usuario: "nathanwpylestrangeplanet" },
+        { imagem: "/img/wawawicomics.svg", usuario: "wawawicomics" },
+        { imagem: "/img/respondeai.svg", usuario: "respondeai" },
+        { imagem: "/img/filomoderna.svg", usuario: "filomoderna" },
+        { imagem: "/img/memeriagourmet.svg", usuario: "memeriagourmet" }
+    ];
+
     return (
         <div class="stories">
-
-            <Story imagem="/img/9gag.svg" usuario="9gag" />
-            <Story imagem="/img/meowed.svg" usuario="meowed" />
-            <Story imagem="/img/barked.svg" usuario="barked" />
-            <Story imagem="/img/nathanwpylestrangeplanet.svg" usuario="nathanwpylestrangeplanet" />
-            <Story imagem="/img/wawawicomics.svg" usuario="wawawicomics" />
-            <Story imagem="/img/respondeai.svg" usuario="respondeai" />
-            <Story imagem="/img/filomoderna.svg" usuario="filomoderna" />
-            <Story imagem="/img/memeriagourmet.svg" usuario="memeriagourmet" />
+                {stories.map(story => <Story imagem={story.imagem} usuario={story.usuario} />)}
 
             <div class="setinha">
                 <IonIcon name="chevron-forward-circle" />
