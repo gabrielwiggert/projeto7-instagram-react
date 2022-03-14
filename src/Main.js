@@ -3,6 +3,13 @@ import Stories from './Stories'
 import Sugestao from './Sugestao'
 
 export default function Main() {
+    const sugestoes = [
+                        {image:"/img/bad.vibes.memes.svg", name:"bad.vibes.memes"},
+                        {image:"/img/chibirdart.svg", name:"chibirdart"},
+                        {image:"/img/razoesparaacreditar.svg", name:"razoesparaacreditar"},
+                        {image:"/img/adorable_animals.svg", name:"adorable_animals"},
+                        {image:"/img/smallcutecats.svg", name:"smallcutecats"}
+                    ];
     return (
         <div class="corpo">
         <div class="esquerda">
@@ -27,11 +34,11 @@ export default function Main() {
               <div>Ver tudo</div>
             </div>
 
-            <Sugestao image="/img/bad.vibes.memes.svg" name="bad.vibes.memes"/>
-            <Sugestao image="/img/chibirdart.svg" name="chibirdart"/>
-            <Sugestao image="/img/razoesparaacreditar.svg" name="razoesparaacreditar"/>
-            <Sugestao image="/img/adorable_animals.svg" name="adorable_animals"/>
-            <Sugestao image="/img/smallcutecats.svg" name="smallcutecats"/>
+            
+            <div>
+                {sugestoes.map(sugestao => <Sugestao image={sugestao.image} name={sugestao.name}/>)}
+            </div>
+
           </div>
 
           <div class="links">
